@@ -1,0 +1,1856 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="nDy0qQ5HIlvhT3Ll8jpkTkFqWxwDaWJURgNoLkWx">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://app.toindo.app.br/assets/backend/global_assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://app.toindo.app.br/assets/backend/global_assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://app.toindo.app.br/assets/backend/global_assets/images/favicons/favicon-16x16.png">
+    <title>Dashboard
+</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+        type="text/css">
+    <link
+        href="https://app.toindo.app.br/assets/backend/global_assets/css/icons/icomoon/styles.min.css"
+        rel="stylesheet" type="text/css">
+    <link href="https://app.toindo.app.br/assets/backend/css/bootstrap.min.css?v=3.5.0-BUILD-02"
+        rel="stylesheet" type="text/css">
+    <link href="https://app.toindo.app.br/assets/backend/css/combined.min.css?v=3.5.0-BUILD-02"
+        rel="stylesheet" type="text/css">
+    <link href="https://app.toindo.app.br/assets/backend/css/layout.min.css?v=3.5.0-BUILD-02"
+        rel="stylesheet" type="text/css">
+    <link href="https://app.toindo.app.br/assets/backend/css/components.min.css?v=3.5.0-BUILD-02"
+        rel="stylesheet" type="text/css">
+    <link href="https://app.toindo.app.br/assets/backend/css/colors.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="https://app.toindo.app.br/assets/backend/global_assets/css/extras/animate.min.css"
+        rel="stylesheet" type="text/css">
+    <link href="https://app.toindo.app.br/assets/backend/css/backend-custom.css?v=3.5.0-BUILD-02"
+        rel="stylesheet" type="text/css">
+    <link type="text/css"
+        href="https://app.toindo.app.br/assets/backend/css/OverlayScrollbars.min.css"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css">
+    <!-- /global stylesheets -->
+
+    <link
+        href="https://app.toindo.app.br/assets/css/icomoon.css" rel="stylesheet" type="text/css">
+    <!-- Core JS files -->
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/main/jquery.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
+
+
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/js/jquery.overlayScrollbars.min.js">
+    </script>
+
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets//js/plugins/ui/moment/moment.min.js">
+    </script>
+
+
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/main/bootstrap.bundle.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/loaders/blockui.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/ui/slinky.min.js">
+    </script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/ui/sticky.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/buttons/spin.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/buttons/ladda.min.js">
+    </script>
+
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/notifications/jgrowl.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/forms/selects/select2.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/forms/styling/uniform.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/forms/styling/switchery.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/pickers/color/spectrum.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/editors/summernote/summernote.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/pickers/daterangepicker.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/uploaders/dropzone.min.js">
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106310733-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-106310733-1'); gtag('evaluation', window.location.hostname);
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/tables/datatables/datatables.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/tables/datatables/extensions/fixed_columns.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/tables/datatables/extensions/col_reorder.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/tables/datatables/extensions/buttons.min.js">
+    </script>
+    
+
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/visualization/echarts/echarts.js"
+        defer></script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/visualization/d3/d3.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/visualization/d3/d3_tooltip.js">
+    </script>
+
+    <script type="text/javascript" src="https://app.toindo.app.br/assets/backend/js/app.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/js/navbar-sticky.js"></script>
+    <script type="text/javascript" src="https://app.toindo.app.br/assets/backend/js/printThis.js">
+    </script>
+    <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/js/jquery-alphanum.js"></script>
+        
+     <!--Olho de Deus-->
+             <!--Olho de Deus--> 
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.js"></script>
+     <script type="text/javascript"
+        src="https://app.toindo.app.br/assets/backend/global_assets/js/plugins/pickers/daterangepicker.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+
+   <!-- /theme JS files -->
+    <style>
+        #nprogress .bar {
+            background: #fff !important;
+        }
+
+        #nprogress .peg {
+            box-shadow: 0 0 10px #fff, 0 0 5px #fff;
+        }
+
+        #nprogress .spinner-icon {
+            border-top-color: #fff;
+            border-left-color: #fff;
+        }
+    </style>
+
+    <style>
+    /* slideshow CSS on Admin Setting &gt; Custom CSS */
+@keyframes slideshow {
+10% {left: 0;}
+20% {left: 0;}
+30% {left: -100%;}
+40% {left: -100%;}
+50% {left: -200%;}
+60% {left: -200%;}
+70% {left: -300%;}
+80% {left: -300%;}
+90% {left: -400%;}
+100% {left: -400%}
+}
+#slider{overflow:hidden;width:50%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
+#slider figure img{width:20%;float:left;}
+#slider figure{position:relative;width:500%;margin:0;left:0;text-align:left;animation:20s slideshow infinite}
+@media screen and (max-width: 767px) {#slider {overflow: hidden; width: 100%; margin: 0 auto;}}
+
+.custom-store-message--Shooting-Star{
+    background: linear-gradient(to right, #fff, #8bc34a);
+    width: 100%;
+    padding: 2px 25px;
+    margin-top: 5px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-align: right;
+    font-style: italic;
+}
+
+.custom-store-message-Simple-Style {
+    background: linear-gradient(to right, #642b73, #c6426e);
+    width: fit-content;
+    padding: 2px 25px;
+    border-radius: 0px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.custom-store-message-Simple-Style-Full-Width
+{
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    width: 100%;
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*Navbar do lojista e Administrador cor laranja*/
+
+ .navbar-dark {
+   color: #F2663A;
+    background: #F2663A;
+    background: #F2663A;
+    border-bottom-color: #F2663A;
+	}
+/*Navbar do lojista e Administrador cor laranja*/
+
+
+/*Botões do Painel*/
+
+.btn-primary {
+    color: #fff;
+    background-color: #F06E04;
+}
+    
+    .nav-pills .nav-link.active{
+    
+    color: #fff;
+    background-color: #F06E04;
+}
+
+/*Botões do Painel*/
+
+/*Menu*/
+  .navbar-light .navbar-nav-link.active{
+    color: #fff;
+    background-color: #F05D04;
+    
+  }
+   
+    /*Menu*/
+</style>
+</head>
+
+<body>
+        <style>
+    .extra-menu {
+        min-width: 500px
+    }
+
+    @media (min-width:320px) and (max-width:767px) {
+        .extra-menu {
+            min-width: auto
+        }
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+</style>
+<div class="navbar navbar-expand-md navbar-dark">
+    <div class="navbar-brand wmin-0 mr-5">
+
+                <a href="https://app.toindo.app.br/public/admin/dashboard" class="d-inline-block">
+            <img src="https://app.toindo.app.br/assets/backend/global_assets/images/dashboard-logo.png"
+                alt="Dashboard">
+        </a>
+        
+            </div>
+    <div class="d-md-none">
+        <button class="navbar-toggler dropdown-toggle" type="button" data-toggle="collapse"
+            data-target="#navbar-mobile">
+            <span>TôindO Delivery | Administração</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" id="navbar-mobile">
+                        <a href="https://app.toindo.app.br/public/auth/logout" class="dropdown-item"><i class="icon-switch2"></i>
+                Logout</a>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <!---->
+
+                                                <li class="nav-item nav-zone-selection">
+                <select name="nav_select_zone" class="nav-select-zone">
+                    <option value="0" > Todas as Zonas </option>
+                                        <option value="6" >Geral</option>
+                                        <option value="7" >Paulo Ramos</option>
+                                        <option value="8" >Pacajá</option>
+                                        <option value="9" >Franquia Lago da Pedra</option>
+                                    </select>
+            </li>
+            <script>
+                $('.nav-select-zone').select2();
+                $('select[name="nav_select_zone"]').on('change',(event) => {
+                    let url = "https://app.toindo.app.br/public/change-zone-scope/"+event.target.value;
+                    //delete datatable filters
+                    var savedDatatables = findLocalItems("DataTables_");
+                    if (savedDatatables.length > 0) {
+                        console.log("Cleaning keys");
+                        $.each(savedDatatables, function (indexInArray, valueOfElement) { 
+                            localStorage.removeItem(valueOfElement.key);
+                        });
+                    }
+                    setTimeout(() => {
+                        window.location.href = url;
+                    }, 500);
+                });
+            </script>
+                                    
+                                    
+
+            <li class="nav-item dropdown dropdown-user">
+                <a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
+                    <span>TôindO Delivery | Administração</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    
+                    <a href="https://app.toindo.app.br/public/auth/logout" class="dropdown-item"><i class="icon-switch2"></i>
+                        Logout</a>
+                </div>
+            </li>
+
+            
+
+        </ul>
+    </div>
+</div>
+<div class="navbar navbar-expand-md navbar-light navbar-sticky">
+    <div class="container">
+        <div class="text-center d-md-none w-100">
+            <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+                data-target="#navbar-navigation">
+                <i class="icon-unfold mr-2"></i>
+                Navegação
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-navigation">
+            <ul class="navbar-nav">
+
+                                <li class="nav-item">
+                    <a href="https://app.toindo.app.br/public/admin/stores"
+                        class="navbar-nav-link ">
+                        <i class="icon-store2 mr-2"></i>
+                        Lojas
+                    </a>
+                </li>
+                
+                                <li class="nav-item dropdown">
+                    <a href="javascript:void(0)"
+                        class="navbar-nav-link dropdown-toggle "
+                        data-toggle="dropdown">
+                        <i class="icon-stack-star mr-2"></i>
+                        Itens & Menu
+                    </a>
+                    <div class="dropdown-menu">
+                                                <a href="https://app.toindo.app.br/public/admin/addoncategories"
+                            class="dropdown-item ">
+                            <i class="icon-tree6 mr-2"></i>
+                            Categorias de complementos
+                        </a>
+                        
+                                                <a href="https://app.toindo.app.br/public/admin/addons"
+                            class="dropdown-item ">
+                            <i class="icon-list2 mr-2"></i>
+                            Complementos
+                        </a>
+                        
+                                                <a href="https://app.toindo.app.br/public/admin/itemcategories"
+                            class="dropdown-item ">
+                            <i class="icon-grid52 mr-2"></i>
+                            Categorias de menu
+                        </a>
+                        
+                                                <a href="https://app.toindo.app.br/public/admin/items"
+                            class="dropdown-item ">
+                            <i class="icon-grid mr-2"></i>
+                            Itens
+                        </a>
+                                            </div>
+                </li>
+                
+                                <li class="nav-item dropdown">
+                    <a href="javascript:void(0)"
+                        class="navbar-nav-link dropdown-toggle  "
+                        data-toggle="dropdown">
+                        <i class="icon-users2 mr-2"></i>
+                        Usuários
+                    </a>
+
+                    <div class="dropdown-menu">
+                                                <a href="https://app.toindo.app.br/public/admin/users"
+                            class="dropdown-item "> <i
+                                class="icon-users4 mr-2"></i> Todos Usuários</a>
+
+                        <a href="https://app.toindo.app.br/public/admin/customers"
+                            class="dropdown-item "> <i
+                                class="icon-user mr-2"></i> Clientes</a>
+                        
+                                                <a href="https://app.toindo.app.br/public/admin/manage-store-owners"
+                            class="dropdown-item "> <i
+                                class="icon-user-tie mr-2"></i> Proprietários de lojas</a>
+                        
+                                                <a href="https://app.toindo.app.br/public/admin/manage-delivery-guys"
+                            class="dropdown-item "> <i
+                                class="icon-truck mr-2"></i> Entregadores</a>
+                        
+                                                <a href="https://app.toindo.app.br/public/admin/staffs"
+                            class="dropdown-item "> <i
+                                class="icon-collaboration mr-2"></i> Funcionários</a>
+                                            </div>
+                </li>
+                
+                               <li class="nav-item dropdown">
+                    <a href="javascript:void(0)"
+                    class="navbar-nav-link dropdown-toggle " data-toggle="dropdown">
+                        <i class="icon-basket mr-2"></i>
+                        Pedidos
+                    </a>
+                    <div class="dropdown-menu">
+                    <a href="https://app.toindo.app.br/public/admin/orders"
+                        class="navbar-nav-link ">
+                        <i class="icon-basket mr-2"></i>
+                        Lista de Pedidos
+                    </a>
+                    <a href="https://app.toindo.app.br/public/admin/liveorders"
+                        class="navbar-nav-link ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill mr-2" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                        </svg>
+                        
+                       Pedidos ao vivo
+                    </a>
+                </div>
+                </li>
+                               
+                
+               
+                
+                     <!--Olho de Deus-->
+                                  <li class="nav-item dropdown">
+                    <a href="javascript:void(0)"
+                        class="navbar-nav-link dropdown-toggle  "
+                        data-toggle="dropdown">
+                        <i class="icon-map mr-2"></i>
+                        Mapas
+                    </a>
+                 <div class="dropdown-menu"> 
+                <a href="https://app.toindo.app.br/public/admin/maps/olho"
+                     class="dropdown-item ">
+                    <i class="icon-location4 mr-2"></i>
+                    Rastreamento de Lojas
+                    </a>
+                <a href="https://app.toindo.app.br/public/admin/map"
+                     class="dropdown-item ">
+                    <i class="icon-location3 mr-2"></i>
+                    Rastreamento de Entregadores
+                    </a>
+                <a href="https://app.toindo.app.br/public/admin/map/users"
+                     class="dropdown-item ">
+                    <i class="icon-location3 mr-2"></i>
+                    Rastreamento de Usuários
+                    </a>
+                 </div>
+                </li>
+                                 <!--Modulo relatórios-->
+                                                                 <li class="nav-item dropdown">
+                            <a href="javascript:void(0)" class="navbar-nav-link dropdown-toggle  " data-toggle="dropdown">
+                                <i class="icon-file-text mr-2"></i>
+                                Relatórios
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="row extra-menu">
+                                    <div class="col-md-6">
+                                        <a href="https://app.toindo.app.br/public/relatorios/reports/customer-performance-report" class="dropdown-item ">
+                                            <i class="icon-rocket mr-2"></i>
+                                            Relatório do cliente
+                                        </a>
+                                        <a href="https://app.toindo.app.br/public/relatorios/reports/store-performance-report" class="dropdown-item ">
+                                            <i class="icon-rocket mr-2"></i>
+                                            Relatório loja
+                                        </a>
+                                        <a href="https://app.toindo.app.br/public/relatorios/reports/store-wise-order-report" class="dropdown-item ">
+                                            <i class="icon-store2 mr-2"></i>
+                                            Relatório pedido loja
+                                        </a>
+                                        <a href="https://app.toindo.app.br/public/relatorios/reports/delivery-earnings-report" class="dropdown-item ">
+                                            <i class="icon-truck mr-2"></i>
+                                            Relatório do entregador
+                                        </a>
+                                        <a href="https://app.toindo.app.br/public/relatorios/reports/order-wise-tax-report" class="dropdown-item ">
+                                            <i class="icon-hammer2 mr-2"></i>
+                                            Relatório imposto pedidos
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="https://app.toindo.app.br/public/relatorios/reports/store-balance-report" class="dropdown-item ">
+                                            <i class="icon-coin-dollar mr-2"></i>
+                                            Relatório saldo da loja
+                                        </a>
+                                        <a href="https://app.toindo.app.br/public/relatorios/reports/order-payment-report" class="dropdown-item ">
+                                            <i class="icon-coin-dollar mr-2"></i>
+                                            Relatório pagamento de pedidos
+                                        </a>
+                                        <a href="https://app.toindo.app.br/public/relatorios/reports/admin-earnings-report" class="dropdown-item ">
+                                            <i class="icon-coin-dollar mr-2"></i>
+                                            Relatório ganhos do admin
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                                                            <!--Modulo relatórios-->
+
+                                <li class="nav-item dropdown">
+                    <a href="javascript:void(0)"
+                        class="navbar-nav-link dropdown-toggle  "
+                        data-toggle="dropdown">
+                        <i class="icon-percent mr-2"></i>
+                        Promoções
+                    </a>
+                    <div class="dropdown-menu">
+                     
+                                                <a href="https://app.toindo.app.br/public/admin/sliders"
+                            class="dropdown-item ">
+                            <i class="icon-image2 mr-2"></i>
+                           Slides Promocionais
+                        </a>
+                                                                        <a href="https://app.toindo.app.br/public/admin/store-category-slider"
+                            class="dropdown-item ">
+                            <i class="icon-grid52 mr-2"></i>
+                            Slides das Categorias das Lojas
+                        </a>
+                                                                        <a href="https://app.toindo.app.br/public/admin/coupons"
+                            class="dropdown-item ">
+                            <i class="icon-price-tags2 mr-2"></i>
+                            Cupons de Desconto
+                        </a>
+                                                                        <a href="https://app.toindo.app.br/public/admin/pages"
+                            class="dropdown-item ">
+                            <i class="icon-files-empty mr-2"></i>
+                            Criar Páginas
+                        </a>
+                        
+                                                <a href="https://app.toindo.app.br/public/admin/notifications"
+                            class="dropdown-item ">
+                            <i class="icon-bubble-dots4 mr-2"></i>
+                            Enviar Notificações Push
+                        </a>
+                                            </div>
+                </li>
+                
+                                <li class="nav-item dropdown">
+                    <a href="javascript:void(0)"
+                        class="navbar-nav-link dropdown-toggle  "
+                        data-toggle="dropdown">
+                        <i class="icon-books mr-2"></i>
+                        Transações
+                    </a>
+                    <div class="dropdown-menu">
+                         <!-- AugustoLimitePedidos
+                                                        
+                            <a href="https://app.toindo.app.br/public/admin/creditos-restaurantes" class="navbar-nav-link " data-popup="tooltip" title="" data-placement="bottom">
+                                <i class="icon-cash3 mr-2"></i>
+                                Configuração de Créditos
+                                    </a>
+                               
+                                                                                <a href="https://app.toindo.app.br/public/admin/package-list" class="navbar-nav-link ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-easel-fill mr-2" viewBox="0 0 16 16">
+                          <path d="M8.473.337a.5.5 0 0 0-.946 0L6.954 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h1.85l-1.323 3.837a.5.5 0 1 0 .946.326L4.908 11H7.5v2.5a.5.5 0 0 0 1 0V11h2.592l1.435 4.163a.5.5 0 0 0 .946-.326L12.15 11H14a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H9.046L8.473.337z"/>
+                            </svg>
+                             Pacotes de Planos
+                            </a>
+                                                         <!--  AugustoLimitePedidos --> 
+                                                <a href="https://app.toindo.app.br/public/admin/store-payouts"
+                            class="dropdown-item ">
+                            <i class="icon-piggy-bank mr-2"></i>
+                            Pagamentos da Loja
+                        </a>
+                                                                        <a href="https://app.toindo.app.br/public/admin/delivery-collections"
+                            class="dropdown-item ">
+                            <i class="icon-cash3 mr-2"></i>
+                            Coletas de Entrega
+                        </a>
+                                                                        <a href="https://app.toindo.app.br/public/admin/delivery-collection-logs"
+                            class="dropdown-item ">
+                            <i class="icon-database-time2 mr-2"></i>
+                            Registros de Coleta de Entrega
+                        </a>
+                                                                        <a href="https://app.toindo.app.br/public/admin/wallet/transactions"
+                            class="dropdown-item ">
+                            <i class="icon-transmission mr-2"></i>
+                            Transações da Carteira
+                        </a>
+                                                <!-- Welington [Remover o relatório padrão do Foodomaa] 
+                                                <a href="https://app.toindo.app.br/public/relatorios/reports/top-items"
+                            class="dropdown-item ">
+                            <i class="icon-graph mr-2"></i>
+                            Relatórios  
+                        </a>
+                        -->
+                                            </div>
+                </li>
+                
+               
+                
+                <!-- AugustoLimitePedidos 
+                                                                                                   AugustoLimitePedidos --> 
+                            
+                             
+
+                
+                <li class="nav-item dropdown">
+                    <a href="javascript:void(0)"
+                        class="navbar-nav-link dropdown-toggle  "
+                        data-toggle="dropdown">
+                        <i class="icon-cog3 mr-2"></i>
+                        Configurações
+                    </a>
+                    <div class="dropdown-menu">
+                                                <a href="https://app.toindo.app.br/public/admin/zones"
+                            class="dropdown-item ">
+                            <i class="icon-location4 mr-2"></i>
+                            Zonas <span
+                                class="badge badge-flat border-grey-800 text-danger text-capitalize ml-1 float-right">NOVA</span>
+                        </a>
+                                                                        <a href="https://app.toindo.app.br/public/admin/popular-geo-locations"
+                            class="dropdown-item ">
+                            <i class="icon-location3 mr-2"></i>
+                            Locais Geográficos Populares
+                        </a>
+                                                                            <a href="https://app.toindo.app.br/public/admin/modules"
+                                class="navbar-nav-link ">
+                                <i class="icon-stars mr-2"></i>
+                                Módulos do Sistema
+                            </a>
+                                                <!-- Augusto APi Whatsapp -->
+                                                                            
+                            <a href="https://app.toindo.app.br/public/wazone/settings" class="navbar-nav-link " data-popup="tooltip" title="" data-placement="bottom">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp mr-2" viewBox="0 0 16 16">
+                              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                            </svg>
+                                Configuração API Whatsapp
+                                    </a>
+                               
+                                                                                           <!-- Augusto APi Whatsapp --> 
+                        <hr class="my-2">
+                        <a href="https://app.toindo.app.br/public/admin/settings?#generalSettings"
+                            class="dropdown-item ">
+                            <i class="icon-gear mr-2"></i>
+                           Todas as Configurações
+                        </a>
+                    </div>
+                </li>
+                
+                            </ul>
+        </div>
+    </div>
+</div>    
+    <div class="page-content container pt-0">
+        <div class="content-wrapper">
+            <BR><table width='100%' border='0' style='padding:15px; border-color:#F00; border-style:solid; background-color:#FF0000; font-family:Tahoma, Geneva, sans-serif; font-size:28px; color:white;'>
+                
+                              
+                
+                                </table>
+<style>
+    .chart-container {
+        overflow: hidden;
+    }
+
+    .chart-container.has-scroll {
+        overflow: hidden;
+    }
+</style>
+
+<div class="content mb-5">
+
+    <div class="d-flex justify-content-between mt-4 mb-0">
+        <div>
+            <h3><b>Dashboard</b></h3>
+        </div>
+        <div>
+            <button type="button" class="btn btn-action-secondary daterange-ranges">
+                <i class="icon-calendar22 position-left mr-1"></i> <span></span> <b class="caret"></b>
+            </button>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="row" id="dashboardStatsBlock">
+        <div class="col-6 col-xl-3 mb-2 mt-2">
+            <div class="col-xl-12 dashboard-display p-3">
+                <a class="block block-link-shadow text-left text-default" href="javascript:void(0)">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="dashboard-display-number">--</div>
+                            <div class="font-size-sm text-uppercase text-muted">Pedidos</div>
+                        </div>
+                        <div class="d-none d-sm-block">
+                            <div class="dashboard-display-icon-block block-bg-1">
+                                <i class="dashboard-display-icon icon-spinner2 spinner color-purple"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-6 col-xl-3 mb-2 mt-2">
+            <div class="col-xl-12 dashboard-display p-3">
+                <a class="block block-link-shadow text-left text-default" href="javascript:void(0)">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="dashboard-display-number">--</div>
+                            <div class="font-size-sm text-uppercase text-muted">Usuários</div>
+                        </div>
+                        <div class="d-none d-sm-block">
+                            <div class="dashboard-display-icon-block block-bg-2">
+                                <i class="dashboard-display-icon icon-spinner2 spinner color-cyan"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-6 col-xl-3 mb-2 mt-2">
+            <div class="col-xl-12 dashboard-display p-3">
+                <a class="block block-link-shadow text-left text-default" href="javascript:void(0)">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="dashboard-display-number">--</div>
+                            <div class="font-size-sm text-uppercase text-muted">Lojas</div>
+                        </div>
+                        <div class="d-none d-sm-block">
+                            <div class="dashboard-display-icon-block block-bg-3">
+                                <i class="dashboard-display-icon icon-spinner2 spinner color-red"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-6 col-xl-3 mb-2 mt-2">
+            <div class="col-xl-12 dashboard-display p-3">
+                <a class="block block-link-shadow text-left text-default" href="javascript:void(0)">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="dashboard-display-number">--</div>
+                            <div class="font-size-sm text-uppercase text-muted">Ganhos</div>
+                        </div>
+                        <div class="d-none d-sm-block">
+                            <div class="dashboard-display-icon-block block-bg-4">
+                                <i class="dashboard-display-icon icon-spinner2 spinner color-green"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row hidden" id="sortable">
+        <div class="col-xl-4 dashboard-block-movable" data-id="1">
+            <div class="dashboard-recent-orders-block mt-2 p-3">
+                <h4 style="color: #000;font-weight: 500;" class="move-handle">Pedidos recentes</h4>
+                                <div class="recent-order-card p-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/order/OD-10-27-OMUU-YVRVML93R" data-popup="tooltip"
+                        data-placement="right" title="Casa da Coxinha">
+                        <div class=" float-right text-right">
+                            <span class="badge order-badge badge-color-3 border-grey-800">
+                                Delivery Assigned
+                            </span>
+                            <br>
+                                                                                    <p class="liveTimer mt-1 text-center min-fit-content order-dashboard-time small"
+                                title="2024-10-27 17:23:26"><i class="icon-spinner10 spinner position-left"></i>
+                            </p>
+                                                                                </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div>
+                                <img src="https://app.toindo.app.br/assets/img/restaurants/1710614487v1L2K8hq82.jpg"
+                                    alt="Casa da Coxinha" height="45" width="45"
+                                    style="border-radius: 0.275rem;">
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Casa da Coxinha</strong></span>
+                                <br>
+                                <span class="small">#YVRVML93R -
+                                    R$29</span>
+                            </div>
+                        </div>
+                                            </a>
+                </div>
+                                <div class="recent-order-card p-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/order/OD-10-27-6WVV-GZRGRXB3V" data-popup="tooltip"
+                        data-placement="right" title="Meet">
+                        <div class=" float-right text-right">
+                            <span class="badge order-badge badge-color-9 border-grey-800">
+                                Payment Failed
+                            </span>
+                            <br>
+                                                                                    <p class="order-dashboard-time min-fit-content mt-1 small"><b>Falha em: </b>
+                                16 minutes 50 seconds</p>
+                                                                                </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div>
+                                <img src="https://app.toindo.app.br/assets/img/restaurants/items17195871496g45DJ492Y.jpg"
+                                    alt="Meet" height="45" width="45"
+                                    style="border-radius: 0.275rem;">
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Meet</strong></span>
+                                <br>
+                                <span class="small">#GZRGRXB3V -
+                                    R$28</span>
+                            </div>
+                        </div>
+                                            </a>
+                </div>
+                                <div class="recent-order-card p-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/order/OD-10-27-M6VR-14KBMJGL6" data-popup="tooltip"
+                        data-placement="right" title="Guaraná Caprichoso">
+                        <div class=" float-right text-right">
+                            <span class="badge order-badge badge-color-4 border-grey-800">
+                                Picked Up
+                            </span>
+                            <br>
+                                                                                    <p class="liveTimer mt-1 text-center min-fit-content order-dashboard-time small"
+                                title="2024-10-27 17:04:10"><i class="icon-spinner10 spinner position-left"></i>
+                            </p>
+                                                                                </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div>
+                                <img src="https://app.toindo.app.br/assets/img/restaurants/1693434783GEhn3QZecV.jpg"
+                                    alt="Guaraná Caprichoso" height="45" width="45"
+                                    style="border-radius: 0.275rem;">
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Guaraná Caprichoso</strong></span>
+                                <br>
+                                <span class="small">#14KBMJGL6 -
+                                    R$26</span>
+                            </div>
+                        </div>
+                                            </a>
+                </div>
+                                <div class="recent-order-card p-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/order/OD-10-27-CU7U-PGRYMNORO" data-popup="tooltip"
+                        data-placement="right" title="Açaiteria Mix">
+                        <div class=" float-right text-right">
+                            <span class="badge order-badge badge-color-5 border-grey-800">
+                                Completed
+                            </span>
+                            <br>
+                                                                                    <p class="order-dashboard-time min-fit-content mt-1 small"><b>Concluído em:
+                                </b>47 minutes 34 seconds</p>
+                                                                                </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div>
+                                <img src="https://app.toindo.app.br/assets/img/restaurants/1689456725kPad66Nmxe.jpg"
+                                    alt="Açaiteria Mix" height="45" width="45"
+                                    style="border-radius: 0.275rem;">
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Açaiteria Mix</strong></span>
+                                <br>
+                                <span class="small">#PGRYMNORO -
+                                    R$17.99</span>
+                            </div>
+                        </div>
+                                            </a>
+                </div>
+                                <div class="recent-order-card p-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/order/OD-10-27-HNGI-A53QXJ0KM" data-popup="tooltip"
+                        data-placement="right" title="Açaiteria Mix">
+                        <div class=" float-right text-right">
+                            <span class="badge order-badge badge-color-9 border-grey-800">
+                                Payment Failed
+                            </span>
+                            <br>
+                                                                                    <p class="order-dashboard-time min-fit-content mt-1 small"><b>Falha em: </b>
+                                16 minutes 46 seconds</p>
+                                                                                </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div>
+                                <img src="https://app.toindo.app.br/assets/img/restaurants/1689456725kPad66Nmxe.jpg"
+                                    alt="Açaiteria Mix" height="45" width="45"
+                                    style="border-radius: 0.275rem;">
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Açaiteria Mix</strong></span>
+                                <br>
+                                <span class="small">#A53QXJ0KM -
+                                    R$17.99</span>
+                            </div>
+                        </div>
+                                            </a>
+                </div>
+                                <div class="recent-order-card p-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/order/OD-10-27-0DOZ-YOKA7JXRA" data-popup="tooltip"
+                        data-placement="right" title="Meet">
+                        <div class=" float-right text-right">
+                            <span class="badge order-badge badge-color-5 border-grey-800">
+                                Completed
+                            </span>
+                            <br>
+                                                                                    <p class="order-dashboard-time min-fit-content mt-1 small"><b>Concluído em:
+                                </b>1 hour 5 minutes 24 seconds</p>
+                                                                                </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div>
+                                <img src="https://app.toindo.app.br/assets/img/restaurants/items17195871496g45DJ492Y.jpg"
+                                    alt="Meet" height="45" width="45"
+                                    style="border-radius: 0.275rem;">
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Meet</strong></span>
+                                <br>
+                                <span class="small">#YOKA7JXRA -
+                                    R$77.99</span>
+                            </div>
+                        </div>
+                                            </a>
+                </div>
+                            </div>
+        </div>
+        <div class="col-xl-3 dashboard-block-movable" data-id="2">
+            <div class="dashboard-new-users-block mt-2 p-3">
+                <h4 style="color: #000;font-weight: 500;" class="move-handle">Novas inscrições</h4>
+                                <div class="new-users px-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/user/edit/3991">
+                        <div class="float-right">
+                                                        <span class="badge badge-flat border-grey-800 text-default text-capitalize"
+                                style="border-radius: 2px;">
+                                Customer
+                            </span>
+                                                    </div>
+                        <div class="d-flex justify-content-start">
+                            <div class="first-letter-icon custom-bg-3">
+                                V
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Vitória</strong> <span class="small">-
+                                        +5599991295123
+                                    </span> </span><br>
+                                <span class="small">24 minutes ago</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="new-users px-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/user/edit/3990">
+                        <div class="float-right">
+                                                        <span class="badge badge-flat border-grey-800 text-default text-capitalize"
+                                style="border-radius: 2px;">
+                                Customer
+                            </span>
+                                                    </div>
+                        <div class="d-flex justify-content-start">
+                            <div class="first-letter-icon custom-bg-5">
+                                TM
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Thalyson Morais</strong> <span class="small">-
+                                        +5561992788616
+                                    </span> </span><br>
+                                <span class="small">18 hours ago</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="new-users px-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/user/edit/3989">
+                        <div class="float-right">
+                                                        <span class="badge badge-flat border-grey-800 text-default text-capitalize"
+                                style="border-radius: 2px;">
+                                Customer
+                            </span>
+                                                    </div>
+                        <div class="d-flex justify-content-start">
+                            <div class="first-letter-icon custom-bg-4">
+                                MA
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Maria Alessandra Santos Dos Santos</strong> <span class="small">-
+                                        +555566992810459
+                                    </span> </span><br>
+                                <span class="small">19 hours ago</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="new-users px-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/user/edit/3988">
+                        <div class="float-right">
+                                                        <span class="badge badge-flat border-grey-800 text-default text-capitalize"
+                                style="border-radius: 2px;">
+                                Customer
+                            </span>
+                                                    </div>
+                        <div class="d-flex justify-content-start">
+                            <div class="first-letter-icon custom-bg-7">
+                                M
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Monic</strong> <span class="small">-
+                                        +5596981257269
+                                    </span> </span><br>
+                                <span class="small">19 hours ago</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="new-users px-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/user/edit/3987">
+                        <div class="float-right">
+                                                        <span class="badge badge-flat border-grey-800 text-default text-capitalize"
+                                style="border-radius: 2px;">
+                                Customer
+                            </span>
+                                                    </div>
+                        <div class="d-flex justify-content-start">
+                            <div class="first-letter-icon custom-bg-1">
+                                BV
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Brayan Vinícius Teixeira de Oliveira</strong> <span class="small">-
+                                        +5598984775133
+                                    </span> </span><br>
+                                <span class="small">21 hours ago</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="new-users px-0 py-2 mb-1">
+                    <a href="https://app.toindo.app.br/public/admin/user/edit/3986">
+                        <div class="float-right">
+                                                        <span class="badge badge-flat border-grey-800 text-default text-capitalize"
+                                style="border-radius: 2px;">
+                                Customer
+                            </span>
+                                                    </div>
+                        <div class="d-flex justify-content-start">
+                            <div class="first-letter-icon custom-bg-1">
+                                LF
+                            </div>
+                            <div class="ml-2">
+                                <span><strong>Luis Felipe</strong> <span class="small">-
+                                        +5598991702276
+                                    </span> </span><br>
+                                <span class="small">21 hours ago</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                            </div>
+        </div>
+        <div class="col-xl-2 dashboard-block-movable" data-id="3">
+            <div class="card mt-2 p-3 position-relative">
+                <h4 style="color: #000;font-weight: 500;" class="move-handle">Transações da carteira</h4>
+                <div class="card-body p-0">
+                                        <div class="d-flex justify-content-between single-transaction py-2">
+                        <div class="small w-100 text-dark">Comissão de pedidos:OD-10-27-CU7U-PGRYMNORO <br>
+                            <span class="small text-default"> 1 minute ago</span>
+                        </div>
+                        <div class="small font-weight-semibold  text-success ">
+                            R$3.00
+                        </div>
+                    </div>
+                                        <div class="d-flex justify-content-between single-transaction py-2">
+                        <div class="small w-100 text-dark">Comissão de pedidos:OD-10-27-0DOZ-YOKA7JXRA <br>
+                            <span class="small text-default"> 10 minutes ago</span>
+                        </div>
+                        <div class="small font-weight-semibold  text-success ">
+                            R$3.00
+                        </div>
+                    </div>
+                                        <div class="d-flex justify-content-between single-transaction py-2">
+                        <div class="small w-100 text-dark">Comissão de pedidos:OD-10-27-H4CF-YZR2NZXR1 <br>
+                            <span class="small text-default"> 1 hour ago</span>
+                        </div>
+                        <div class="small font-weight-semibold  text-success ">
+                            R$3.00
+                        </div>
+                    </div>
+                                        <div class="d-flex justify-content-between single-transaction py-2">
+                        <div class="small w-100 text-dark">Reembolso pelo cancelamento do pedido.OD-10-27-VPCY-LDKKXJN3K <br>
+                            <span class="small text-default"> 1 hour ago</span>
+                        </div>
+                        <div class="small font-weight-semibold  text-success ">
+                            R$19.00
+                        </div>
+                    </div>
+                                        <div class="d-flex justify-content-between single-transaction py-2">
+                        <div class="small w-100 text-dark">Comissão de pedidos:OD-10-27-CRZ7-XOR9XO93L <br>
+                            <span class="small text-default"> 1 hour ago</span>
+                        </div>
+                        <div class="small font-weight-semibold  text-success ">
+                            R$3.00
+                        </div>
+                    </div>
+                                        <div class="d-flex justify-content-between single-transaction py-2">
+                        <div class="small w-100 text-dark">Comissão de pedidos:OD-10-27-TSLN-EMKBA15L9 <br>
+                            <span class="small text-default"> 1 hour ago</span>
+                        </div>
+                        <div class="small font-weight-semibold  text-success ">
+                            R$3.00
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="col-xl-3 dashboard-block-movable" data-id="4">
+                        <div class="card mt-2">
+                <div class="card-body">
+                                        <div class="row">
+                        <div class="col font-weight-semibold move-handle">
+                            Alcance da meta de hoje
+                        </div>
+                        <div class="col col-auto">
+                            <span
+                                class="text-success font-weight-semibold">33%</span>
+                        </div>
+                    </div>
+                    <div class="progress mt-2" style="height: 10px; border-radius: 25px;">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                            style="width: 33%"></div>
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <div class="mt-4">
+                                <h6 class="mb-1">Receita alvo</h6>
+                                <h4 class="mb-0 font-weight-semibold">
+                                    R$1700
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col col-auto">
+                            <div class="mt-4">
+                                <h6 class="mb-1">Receita real</h6>
+                                <h4 class="mb-0 font-weight-semibold">
+                                    R$554.85</h4>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                        <div class="card mt-2" style="background-image: linear-gradient(90deg,#5b73e8,#44c4fa);">
+                <div class="card-body">
+                    <h4 class="font-weight-semibold text-center mb-1 text-white move-handle">16
+                        Vendas hoje</h4>
+                    <p class="text-success-600 small text-center mb-3 text-white"
+                        style="padding: 5px; background-color: rgb(0 0 0 / 16%); font-weight: 500; border-radius: 2px;">
+                        <i class="icon-stats-decline2 mr-1"></i>16%
+                        comparado a
+                        ontem a partir das ( 05:43 PM)
+                    </p>
+                    <div id="hourly-sales-count" class="mt-2" style="margin-bottom: -20px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 dashboard-block-movable" data-id="5">
+            <div class="dashboard-latest-reviews mt-2 p-3">
+                <h4 style="color: #000;font-weight: 500;" class="move-handle">últimas revisões</h4>
+                                <div class="top-review px-0 py-2">
+
+                    <div class="d-flex justify-content-between">
+                        <div class="small">
+                            Customer: Beatriz <br>
+                            Order: <a href=" https://app.toindo.app.br/public/admin/order/OD-10-26-XB31-5BKMXJOLM">
+                                #5BKMXJOLM</a> <br>
+                                                        Delivery:
+                            <a
+                                href="https://app.toindo.app.br/public/admin/user/edit/2456">Kaio Fernandes da Costa</a>
+                                                    </div>
+                        <div>
+                            <span
+                                class="ml-1 badge badge-flat text-white rating-green">5
+                                <i class="icon-star-full2 text-white" style="font-size: 0.6rem;" data-popup="tooltip"
+                                    title="Delivery Review" data-placement="top"></i></span>
+                            <br>
+                            <span
+                                class="ml-1 badge badge-flat text-white rating-green">
+                                5
+                                <i class="icon-star-full2 text-white" style="font-size: 0.6rem;" data-popup="tooltip"
+                                    title="Store Review" data-placement="top"></i></span>
+                        </div>
+                    </div>
+                </div>
+                                <div class="top-review px-0 py-2">
+
+                    <div class="d-flex justify-content-between">
+                        <div class="small">
+                            Customer: Beatriz <br>
+                            Order: <a href=" https://app.toindo.app.br/public/admin/order/OD-10-27-TSLN-EMKBA15L9">
+                                #EMKBA15L9</a> <br>
+                                                        Delivery:
+                            <a
+                                href="https://app.toindo.app.br/public/admin/user/edit/2957">Eros Sousa</a>
+                                                    </div>
+                        <div>
+                            <span
+                                class="ml-1 badge badge-flat text-white rating-green">5
+                                <i class="icon-star-full2 text-white" style="font-size: 0.6rem;" data-popup="tooltip"
+                                    title="Delivery Review" data-placement="top"></i></span>
+                            <br>
+                            <span
+                                class="ml-1 badge badge-flat text-white rating-red">
+                                1
+                                <i class="icon-star-full2 text-white" style="font-size: 0.6rem;" data-popup="tooltip"
+                                    title="Store Review" data-placement="top"></i></span>
+                        </div>
+                    </div>
+                </div>
+                                <div class="top-review px-0 py-2">
+
+                    <div class="d-flex justify-content-between">
+                        <div class="small">
+                            Customer: Fabiana Simplício <br>
+                            Order: <a href=" https://app.toindo.app.br/public/admin/order/OD-10-27-D9WR-PGRYMNZRO">
+                                #PGRYMNZRO</a> <br>
+                                                        Delivery:
+                            <a
+                                href="https://app.toindo.app.br/public/admin/user/edit/2957">Eros Sousa</a>
+                                                    </div>
+                        <div>
+                            <span
+                                class="ml-1 badge badge-flat text-white rating-green">5
+                                <i class="icon-star-full2 text-white" style="font-size: 0.6rem;" data-popup="tooltip"
+                                    title="Delivery Review" data-placement="top"></i></span>
+                            <br>
+                            <span
+                                class="ml-1 badge badge-flat text-white rating-green">
+                                5
+                                <i class="icon-star-full2 text-white" style="font-size: 0.6rem;" data-popup="tooltip"
+                                    title="Store Review" data-placement="top"></i></span>
+                        </div>
+                    </div>
+                </div>
+                                <div class="top-review px-0 py-2">
+
+                    <div class="d-flex justify-content-between">
+                        <div class="small">
+                            Customer: Rayla <br>
+                            Order: <a href=" https://app.toindo.app.br/public/admin/order/OD-10-26-L8QK-YY3DXJP3Z">
+                                #YY3DXJP3Z</a> <br>
+                                                        Delivery:
+                            <a
+                                href="https://app.toindo.app.br/public/admin/user/edit/2957">Eros Sousa</a>
+                                                    </div>
+                        <div>
+                            <span
+                                class="ml-1 badge badge-flat text-white rating-green">5
+                                <i class="icon-star-full2 text-white" style="font-size: 0.6rem;" data-popup="tooltip"
+                                    title="Delivery Review" data-placement="top"></i></span>
+                            <br>
+                            <span
+                                class="ml-1 badge badge-flat text-white rating-green">
+                                5
+                                <i class="icon-star-full2 text-white" style="font-size: 0.6rem;" data-popup="tooltip"
+                                    title="Store Review" data-placement="top"></i></span>
+                        </div>
+                    </div>
+                </div>
+                                <div class="top-review px-0 py-2">
+
+                    <div class="d-flex justify-content-between">
+                        <div class="small">
+                            Customer: Sintia <br>
+                            Order: <a href=" https://app.toindo.app.br/public/admin/order/OD-10-26-AB54-XJ3WMBNL2">
+                                #XJ3WMBNL2</a> <br>
+                                                        Delivery:
+                            <a
+                                href="https://app.toindo.app.br/public/admin/user/edit/2456">Kaio Fernandes da Costa</a>
+                                                    </div>
+                        <div>
+                            <span
+                                class="ml-1 badge badge-flat text-white rating-green">5
+                                <i class="icon-star-full2 text-white" style="font-size: 0.6rem;" data-popup="tooltip"
+                                    title="Delivery Review" data-placement="top"></i></span>
+                            <br>
+                            <span
+                                class="ml-1 badge badge-flat text-white rating-green">
+                                5
+                                <i class="icon-star-full2 text-white" style="font-size: 0.6rem;" data-popup="tooltip"
+                                    title="Store Review" data-placement="top"></i></span>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+        </div>
+        <div class="col-xl-3 dashboard-block-movable" data-id="6">
+            <div class="dashboard-top-stores mt-2 p-3 position-relative">
+                <div class="mb-2">
+                    <h4 style="color: #000;font-weight: 500;" class="move-handle mb-0">Principais lojas</h4>
+                    <p class="topStoreFromTo small mb-0" style="font-size: 10px">(Este mês)</p>
+                </div>
+                <div id="topStoresDynamicList"></div>
+            </div>
+        </div>
+        <div class="col-xl-6 d-none d-md-block dashboard-block-movable" data-id="7">
+            <div class="card mt-2 move-handle">
+                <div class="card-body">
+                                        <div class="chart-container has-scroll">
+                        <div class="chart has-fixed-height has-minimum-width" id="basic_donut"></div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="col-xl-3 dashboard-block-movable" data-id="8">
+            <div class="dashboard-todoNotes mt-2 p-3 position-relative" style="max-height: 504px; overflow-y: scroll;">
+                <div>
+                    <h4 style="color: #000;font-weight: 500;" class="move-handle">Notas</h4>
+                    <input type="text" id="todo_data" placeholder="Adicione uma nota aqui..." class="mt-2 mb-1">
+                    <ul id="filledTodoNotes" class="mt-2 m-0">
+                                                <li class="d-flex justify-content-between px-0 todoSingleLi">
+                            <div class="mr-3 ignore-drag">CPF obrigatório ao fazer o cadastro URGENTE 🚨 </div>
+                            <div class="deleteTodoNote btn btn-sm btn-default cursor-pointer rounded h-100"
+                                data-id="6"><i class='icon-cross3 text-warning'></i></div>
+                        </li>
+                                                <li class="d-flex justify-content-between px-0 todoSingleLi">
+                            <div class="mr-3 ignore-drag">adicionar o stripe </div>
+                            <div class="deleteTodoNote btn btn-sm btn-default cursor-pointer rounded h-100"
+                                data-id="5"><i class='icon-cross3 text-warning'></i></div>
+                        </li>
+                                                <li class="d-flex justify-content-between px-0 todoSingleLi">
+                            <div class="mr-3 ignore-drag">app lojista império burguer não toca 23/07/23 </div>
+                            <div class="deleteTodoNote btn btn-sm btn-default cursor-pointer rounded h-100"
+                                data-id="4"><i class='icon-cross3 text-warning'></i></div>
+                        </li>
+                                                <li class="d-flex justify-content-between px-0 todoSingleLi">
+                            <div class="mr-3 ignore-drag">painel ao vivo com nomes por cima </div>
+                            <div class="deleteTodoNote btn btn-sm btn-default cursor-pointer rounded h-100"
+                                data-id="3"><i class='icon-cross3 text-warning'></i></div>
+                        </li>
+                                                <li class="d-flex justify-content-between px-0 todoSingleLi">
+                            <div class="mr-3 ignore-drag">Lojas testes 14 09 </div>
+                            <div class="deleteTodoNote btn btn-sm btn-default cursor-pointer rounded h-100"
+                                data-id="1"><i class='icon-cross3 text-warning'></i></div>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+
+               
+            </div>
+</div>
+</div>
+
+<input type="hidden" name="_token" value="nDy0qQ5HIlvhT3Ll8jpkTkFqWxwDaWJURgNoLkWx" id="token">
+
+<script>
+    function init() {
+
+        $(".dashboard-todoNotes").overlayScrollbars({
+            scrollbars : {
+                visibility       : "auto",
+                autoHide         : "leave",
+                autoHideDelay    : 500
+            }
+        });
+
+        $('#todo_data').keypress(function(event){
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if(keycode == '13'){
+                var todo_data = $('#todo_data').val();
+                $.ajax({
+                    type: "get",
+                    url: "https://app.toindo.app.br/public/admin/dashboard/save-todo-note",
+                    data: {"data": todo_data, "priority": "HIGH"},
+                    dataType: "json",
+                    success: function (response) {
+                        console.log(response.data.id);
+                        $('#todo_data').val("");
+                        $('#filledTodoNotes').prepend("<li class='d-flex justify-content-between px-0 todoSingleLi'><div class='mr-3'>"+ todo_data +" </div><div class='deleteTodoNote btn btn-sm btn-default cursor-pointer rounded h-100' data-id='"+response.data.id+"'><i class='icon-cross3 text-warning'></i></div></li>")
+                    }
+                });
+            }
+        });
+
+        $('body').on("click", ".deleteTodoNote", function(e) {
+            e.preventDefault();
+            
+            if (confirm("Confirm delete?") == true) {
+                var todoNoteId = $(this).attr('data-id');
+                var li = $(this).parent();
+                $.ajax({
+                    type: "get",
+                    url: "https://app.toindo.app.br/public/admin/dashboard/delete-todo-note",
+                    data: {"id": todoNoteId},
+                    dataType: "json",
+                    success: function (response) {
+                        li.remove();
+                    }
+                });
+            }
+            
+        });
+    
+        timer = setInterval(updateClock, 1000);
+    
+        var newDate = new Date();
+        var newStamp = newDate.getTime();
+    
+        var timer; 
+    
+        function updateClock() {
+    
+            $('.liveTimer').each(function(index, el) {
+                var orderCreatedData = $(this).attr("title");
+                var startDateTime = new Date(orderCreatedData); 
+                var startStamp = startDateTime.getTime();
+            
+    
+                newDate = new Date();
+                newStamp = newDate.getTime();
+                var diff = Math.round((newStamp-startStamp)/1000);
+                
+                var d = Math.floor(diff/(24*60*60));
+                diff = diff-(d*24*60*60);
+                var h = Math.floor(diff/(60*60));
+                diff = diff-(h*60*60);
+                var m = Math.floor(diff/(60));
+                diff = diff-(m*60);
+                var s = diff;
+                var checkDay = d > 0 ? true : false;
+                var checkHour = h > 0 ? true : false;
+                var checkMin = m > 0 ? true : false;
+                var checkSec = s > 0 ? true : false;
+                var formattedTime = checkDay ? d+ " day" : "";
+                formattedTime += checkHour ? " " +h+ " hr" : "";
+                formattedTime += checkMin ? " " +m+ " min" : "";
+                formattedTime += checkSec ? " " +s+ " sec" : "";
+    
+                $(this).text(formattedTime);
+            });
+        }
+    
+        require.config({
+            paths: {
+                echarts: 'https://app.toindo.app.br/assets/backend/global_assets/js/plugins/visualization/echarts'
+            }
+        });
+    
+        require(
+            [
+                'echarts',
+                'echarts/theme/limitless',
+                'echarts/chart/pie',
+                'echarts/chart/funnel',
+            ],
+    
+            function (ec, limitless) {
+    
+                var basic_donut = ec.init(document.getElementById('basic_donut'), limitless);
+              
+                basic_donut_options = {
+    
+                    // Add title
+                    title: {
+                        text: 'Visão geral dos status do pedido',
+                        subtext: 'De todos os pedidos até 2024-10-27',
+                        x: 'center'
+                    },
+    
+                    // Add legend
+                    legend: {
+                        show: true,
+                        orient: 'vertical',
+                        x: 'left',
+                        data: ['Order Placed', 'Preparing Order', 'Delivery Guy Assigned', 'Order Picked Up', 'Delivered', 'Canceled', 'Ready For Pick Up', 'Awaiting Payment', 'Payment Failed', 'Scheduled Order', 'Confirmed Order', 'Notificando Entregador']
+                    },
+    
+                    // Display toolbox
+                    toolbox: {
+                        show: false,
+                    },
+    
+                    // Enable drag recalculate
+                    calculable: false,
+    
+                    // Add series
+                    series: [
+                        {
+                            name: 'Orders',
+                            type: 'pie',
+                            radius: ['50%', '70%'],
+                            center: ['50%', '58%'],
+                            itemStyle: {
+                                normal: {
+                                    label: {
+                                        show: true
+                                    },
+                                    labelLine: {
+                                        show: true
+                                    }
+                                },
+                                emphasis: {
+                                    label: {
+                                        show: true,
+                                        formatter: '{b}' + '\n\n' + '{c} ({d}%)',
+                                        position: 'center',
+                                        textStyle: {
+                                            fontSize: '17',
+                                            fontWeight: '500'
+                                        }
+                                    }
+                                }
+                            },
+    
+                            data: [{value:1, name:'Entregador Atribuído'}, {value:1, name:'Retirada'}, {value:28223, name:'Entregue'}, {value:1570, name:'Cancelado'}, {value:2708, name:'Falha no Pagamento'}, {value:2, name:'Notificando Entregador'}, ] 
+                        }
+                    ]
+                };
+    
+                basic_donut.setOption(basic_donut_options);
+    
+                 window.onresize = function () {
+                    setTimeout(function (){
+                        basic_donut.resize();
+                    }, 200);
+                }
+    
+            }
+        );
+
+        $('.select').select2({
+            minimumResultsForSearch: -1
+        });
+        //dateranger picker
+        // Initialize with options
+        $('.daterange-ranges').daterangepicker({
+                startDate: moment().startOf('month'),
+                endDate:moment().endOf('month'),
+                minDate: '01/01/2020',
+                maxDate: moment().format('MM-DD-YYYY'),
+                dateLimit: {
+                    'months': 48,
+                },
+                ranges: {
+                    'Hoje': [moment(), moment()],
+                    'Ontem': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Últimos 7 dias': [moment().subtract(6, 'days'), moment()],
+                    'Últimos 30 dias': [moment().subtract(29, 'days'), moment()],
+                    'Este mês': [moment().startOf('month'), moment()],
+                    'Mês passado': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                },
+                opens: 'left',
+                applyClass: 'btn-small bg-primary',
+                cancelClass: 'btn-small btn-default',
+                autoApply: true,
+            },
+            function(start, end) {
+                var fromToDate = start.format('MMMM D, YYYY') + ' &nbsp; - &nbsp; ' + end.format('MMMM D, YYYY');
+                $('.daterange-ranges span').html(fromToDate);
+                $('.topStoreFromTo').html('('+fromToDate+')');
+                //ajax processing
+                $('.dashboard-display-icon').each(function(index, el) {
+                    $(this).removeClass('icon-stats-growth2 icon-users4 icon-store2 icon-coin-dollar').addClass('icon-spinner2 spinner')
+                });
+                let from = start.format('YYYY-MM-DD')
+                let to = end.format('YYYY-MM-DD')
+                $.ajax({
+                        url: 'https://app.toindo.app.br/public/admin/get-dashboard-stats',
+                        type: 'GET',
+                        dataType: 'JSON',
+                        data: {
+                            from: from,
+                            to: to
+                        },
+                    })
+                    .done(function(data) {
+                        $('#dashboardStatsBlock').html(data.dashboardStats);
+                        $('#topStoresDynamicList').html(data.topStores);
+                        $('[data-toggle="tooltip"]').tooltip();  
+                    })
+                    .fail(function() {
+                        console.log("error");
+                    })
+            }
+        );
+
+        // Display date format
+        // $('.daterange-ranges span').html(moment().format('MMMM D, YYYY'));
+        $('.daterange-ranges span').html("This Month")
+        $('.daterange-ranges').on('show.daterangepicker', function(ev, picker) {
+            $('body').addClass("daterange-blur");
+        });
+        $('.daterange-ranges').on('hide.daterangepicker', function(ev, picker) {
+            $('body').removeClass("daterange-blur");
+        });
+
+        //onload
+        $.ajax({
+            url: 'https://app.toindo.app.br/public/admin/get-dashboard-stats',
+            type: 'GET',
+            dataType: 'JSON',
+            data: {
+                from: moment().startOf('month').format('YYYY-MM-DD'),
+                to: moment().format('YYYY-MM-DD'),
+            },
+        })
+        .done(function(data) {
+            $('#dashboardStatsBlock').html(data.dashboardStats);
+            $('#topStoresDynamicList').html(data.topStores);
+            $('[data-toggle="tooltip"]').tooltip();  
+        })
+        .fail(function() {
+            console.log("error");
+        })
+
+
+        generateBarChart("#hourly-sales-count", 24, 40, true, "elastic", 1200, 50, "#ffffff", "hours");
+
+        function generateBarChart(element, barQty, height, animate, easing, duration, delay, color, tooltip) {
+            var bardata = [0,0,0,0,0,0,0,0,0,1,2,2,1,2,5,2,0,0,0,0,0,0,0,0];
+
+            var d3Container = d3.select(element),
+                width = d3Container.node().getBoundingClientRect().width;
+            
+            var x = d3.scale.ordinal()
+                .rangeBands([0, width], 0.3)
+
+            var y = d3.scale.linear()
+                .range([0, height]);
+
+            x.domain(d3.range(0, bardata.length))
+
+            y.domain([0, d3.max(bardata)])
+
+            var container = d3Container.append('svg');
+
+            var svg = container
+                .attr('width', width)
+                .attr('height', height)
+                .append('g');
+
+            var bars = svg.selectAll('rect')
+                .data(bardata)
+                .enter()
+                .append('rect')
+                    .attr('class', 'd3-random-bars')
+                    .attr('width', x.rangeBand())
+                    .attr('x', function(d,i) {
+                        return x(i);
+                    })
+                    .style('fill', color);
+
+            var tip = d3.tip()
+                .attr('class', 'd3-tip')
+                .offset([-10, 0]);
+
+            bars.call(tip)
+                .on('mouseover', tip.show)
+                .on('mouseout', tip.hide);
+
+            if(tooltip == "hours") {
+                tip.html(function (d, i) {
+                    return "<div class='text-center'>" +
+                            "<h6 class='no-margin mb-0'>" + d + " Sales </h6>" +
+                            "<div class='text-size-small mt-2'>at " + i + ":00" + "</div>" +
+                        "</div>"
+                });
+            }
+
+            if(animate) {
+                withAnimation();
+            } else {
+                withoutAnimation();
+            }
+
+            function withAnimation() {
+                bars
+                    .attr('height', 0)
+                    .attr('y', height)
+                    .transition()
+                        .attr('height', function(d) {
+                            return y(d);
+                        })
+                        .attr('y', function(d) {
+                            return height - y(d);
+                        })
+                        .delay(function(d, i) {
+                            return i * delay;
+                        })
+                        .duration(duration)
+                        .ease(easing);
+            }
+
+            function withoutAnimation() {
+                bars
+                    .attr('height', function(d) {
+                        return y(d);
+                    })
+                    .attr('y', function(d) {
+                        return height - y(d);
+                    })
+            }
+
+            $(window).on('resize', barsResize);
+            $(document).on('click', '.sidebar-control', barsResize);
+
+            function barsResize() {
+                console.log("called");
+                width = d3Container.node().getBoundingClientRect().width;
+                container.attr("width", width);
+                svg.attr("width", width);
+                x.rangeBands([0, width], 0.3);
+                svg.selectAll('.d3-random-bars')
+                    .attr('width', x.rangeBand())
+                    .attr('x', function(d,i) {
+                        return x(i);
+                    });
+            }
+        
+
+            var sortable = $('#sortable').sortable({
+                animation: 350,
+                easing: "cubic-bezier(0.42, 0, 0.58, 1.0)",
+                handle: ".move-handle",
+                onUpdate: function (evt) {
+                    let newSortOrder = {};
+                    $('.dashboard-block-movable').each(function() {
+                        newSortOrder[$(this).index()] = $(this).data('id');
+                    });
+                },
+                store: {
+                    get: function (sortable) {
+                        var order = localStorage.getItem("admin_dashboard_custom_order");
+                        $('#sortable').removeClass("hidden");
+                        barsResize();
+                        return order ? order.split('|') : []; 
+                    },
+                    set: function (sortable) {
+                        var order = sortable.toArray();
+                        localStorage.setItem("admin_dashboard_custom_order", order.join('|'));
+                    }
+                }
+            });
+
+
+           /* $.ajax({
+                type: "GET",
+                url: "https://app.toindo.app.br/public/admin/dashboard/getFoodomaaNews",
+                dataType: "json",
+                success: function (response) {
+                    $('#foodomaaNews').html(response.data);
+                }
+            });*/
+
+            $('body').on("click", ".foodomaaSingleNews", function(e) {
+                var self = $(this).parents('.foodomaaSingleNewsBlock');
+
+                var id = $(this).attr("data-id");
+                var token = $('#token').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "https://app.toindo.app.br/public/admin/dashboard/makeFoodomaaNewsRead",
+                    data: { _token: token, id: id},
+                    dataType: "json",
+                    success: function (response) {
+                        self.removeClass("newsNotRead").addClass("newsRead");
+
+                        if (!response.was_already_read) {
+                            var currentCount = $('#nonReadCounter').html();
+                            currentCount = parseInt(currentCount);
+                            if (currentCount > 1) {
+                                $('#nonReadCounter').html(currentCount-1);
+                            } else {
+                                $('#nonReadCounter').remove();
+                            }
+                            console.log("here");
+                            $('#foodomaaLatestNewsBlock').remove();
+                        }
+                    }
+                });
+            });
+            
+            $('body').on("click", ".closeFoodomaaLatestNewsBlock", function(e) {
+                $('#foodomaaLatestNewsBlock').remove();
+                var id = $(this).attr("data-id");
+                var token = $('#token').val();
+                $.ajax({
+                    type: "POST",
+                    url: "https://app.toindo.app.br/public/admin/dashboard/makeFoodomaaNewsRead",
+                    data: { _token: token, id: id},
+                    dataType: "json",
+                    success: function (response) {
+                        console.log(response);
+                    }
+                });
+            });
+        }
+    }
+
+    $(function () {
+        init();
+    });
+
+</script>
+        </div>
+    </div>
+                <script>
+        NProgress.configure({ showSpinner: true, minimum: 0.2 });
+        NProgress.start();
+        window.onload = function () { NProgress.done(); }
+    </script>
+    <script>
+        function findLocalItems (query) {
+            var i, results = [];
+            for (i in localStorage) {
+                if (localStorage.hasOwnProperty(i)) {
+                if (i.match(query) || (!query && typeof i === 'string')) {
+                    value = JSON.parse(localStorage.getItem(i));
+                    results.push({key:i,val:value});
+                }
+                }
+            }
+            return results;
+        }
+        $(function() {
+                $('form').submit(function(){
+                    $(this).find(':input[type=submit]').prop('disabled', true);
+                });
+                $('.note-codable').on('blur', function() {
+                  var codeviewHtml        = $(this).val();
+                  var $summernoteTextarea = $(this).closest('.note-editor').siblings('textarea');
+                  $summernoteTextarea.val(codeviewHtml);
+                 });
+            });
+    </script>
+</body>
+
+</html> 
